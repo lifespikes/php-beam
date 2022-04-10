@@ -1,4 +1,6 @@
 # Laravel-Inertia-Vite-React (LIVR)
+_Component of `lifespikes/lifespikes`_
+
 The title gives it away, doesn't it?
 
 A Laravel package that provides a simple way to deploy Inertia applications
