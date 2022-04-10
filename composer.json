@@ -1,0 +1,19 @@
+{
+    "name": "lifespikes/livr",
+    "autoload": {
+        "psr-4": {
+            "LifeSpikes\\Livr\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LifeSpikes\\Livr\\LivrServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "inertiajs/inertia-laravel": "^0.5.4",
+        "innocenzi/laravel-vite": "0.2.*"
+    }
+}
