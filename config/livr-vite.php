@@ -35,7 +35,7 @@ return fn (
     ],
 
     'aliases'   =>  [
-        '@livr' => realpath(__DIR__ . '/../src/vite'),
+        '@livr' => '.' . str_replace(getcwd(), '', realpath(__DIR__ . '/../src/vite')),
         ...($aliases ?? [])
     ],
 

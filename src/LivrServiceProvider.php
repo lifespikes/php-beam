@@ -34,6 +34,7 @@ class LivrServiceProvider extends ServiceProvider
             $generator = require __DIR__ . '/../config/livr-vite.php';
 
             $config->set('vite', array_merge(
+                $config->get('vite', []),
                 $generator(
                     publicDir: $appConfig['public_dir'],
                     buildDir: $appConfig['build_dir'],
@@ -44,8 +45,7 @@ class LivrServiceProvider extends ServiceProvider
                     viteSslKey: $appConfig['vite']['ssl_key'],
                     viteSslCert: $appConfig['vite']['ssl_cert'],
                     aliases: $appConfig['aliases'],
-                ),
-                $config->get('vite', [])
+                )
             ));
         }
     }
