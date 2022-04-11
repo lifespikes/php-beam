@@ -189,5 +189,6 @@ return $config
     ->setFinder(
         PhpCsFixer\Finder::create()
             ->exclude('vendor')
-            ->in(__DIR__)
+            ->exclude('storage')
+            ->in(getcwd())
     );
