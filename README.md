@@ -1,4 +1,5 @@
 # Laravel-Inertia-Vite-React (LIVR)
+
 _Component of `lifespikes/lifespikes`_
 
 The title gives it away, doesn't it?
@@ -7,7 +8,9 @@ A Laravel package that provides a simple way to deploy Inertia applications
 powered by Vite and React.
 
 ## Getting Started
+
 ### Installation
+
 Install the package using Composer:
 
 ```bash
@@ -23,12 +26,13 @@ able to use our configuration helpers if you use an older version of these
 tools.
 
 ### Quick Start
+
 LIVR is a package with an opinionated stack, but everything else is up to
 you. There are two steps to configure LIVR:
 
 **Laravel Config**
 
-Our service provider wraps around `innocenzi/laravel-vite` and 
+Our service provider wraps around `innocenzi/laravel-vite` and
 `inertiajs/inertia-laravel`. We provide a standard configuration for both
 libraries that should support most installations. You can configure PhpBeam
 using by overriding any of the config options found in `config/php-beam.php`.
@@ -95,6 +99,7 @@ createInertiaViteApp(
 > helper for module resolution though!
 
 ### Environment Configuration
+
 The best way of customizing configuration for LIVR will be using environment
 variables. Modifying config values directly may cause issues with how LIVR
 synchronizes settings with its vite helpers.

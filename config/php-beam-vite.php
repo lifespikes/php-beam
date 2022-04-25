@@ -9,7 +9,7 @@ return fn (
     ?string $vitePublicUri = null,
     ?string $viteSslKey = null,
     ?string $viteSslCert = null,
-    ?array $aliases = []
+    ?array  $aliases = []
 ) => [
     'configs' => [
         'php-beam' => [
@@ -18,11 +18,11 @@ return fn (
                 'ignore' => '/\\.(d\\.ts|json)$/',
             ],
             'dev_server' => [
-                'enabled'                    => true,
-                'ping_timeout'               => 1,
-                'url'                        => "$viteBindUri:$viteBindPort",
-                'key'                        => $viteSslKey,
-                'cert'                       => $viteSslCert,
+                'enabled' => true,
+                'ping_timeout' => 1,
+                'url' => "$viteBindUri:$viteBindPort",
+                'key' => $viteSslKey,
+                'cert' => $viteSslCert,
             ],
             'build_path' => $buildDir,
         ],
@@ -34,7 +34,7 @@ return fn (
         ]
     ],
 
-    'aliases'   =>  [
+    'aliases' => [
         '@php-beam' => '.' . str_replace(getcwd(), '', realpath(__DIR__ . '/../src/vite')),
         ...($aliases ?? [])
     ],
@@ -42,15 +42,15 @@ return fn (
     'env_prefixes' => ['VITE_', 'MIX_', 'SCRIPT_'],
 
     'interfaces' => [
-        'heartbeat_checker'  => Innocenzi\Vite\HeartbeatCheckers\HttpHeartbeatChecker::class,
-        'tag_generator'      => Innocenzi\Vite\TagGenerators\CallbackTagGenerator::class,
+        'heartbeat_checker' => Innocenzi\Vite\HeartbeatCheckers\HttpHeartbeatChecker::class,
+        'tag_generator' => Innocenzi\Vite\TagGenerators\CallbackTagGenerator::class,
         'entrypoints_finder' => Innocenzi\Vite\EntrypointsFinder\DefaultEntrypointsFinder::class,
     ],
 
-    'uri'               =>  $viteBindUri,
-    'port'              =>  $viteBindPort,
-    'dev_url'           =>  $vitePublicUri,
-    'public_directory'  =>  $publicDir,
+    'uri' => $viteBindUri,
+    'port' => $viteBindPort,
+    'dev_url' => $vitePublicUri,
+    'public_directory' => $publicDir,
 
-    'default'           =>  'php-beam',
+    'default' => 'php-beam',
 ];

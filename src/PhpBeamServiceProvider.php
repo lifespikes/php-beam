@@ -6,10 +6,8 @@ use Config;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\View\ViewFinderInterface;
 use Inertia\Middleware as InertiaMiddleware;
 use Illuminate\Contracts\Foundation\CachesConfiguration;
-use Illuminate\Contracts\Container\BindingResolutionException;
 
 class PhpBeamServiceProvider extends ServiceProvider
 {
@@ -28,7 +26,7 @@ class PhpBeamServiceProvider extends ServiceProvider
 
     private function createViteConfiguration()
     {
-        if (! ($this->app instanceof CachesConfiguration && $this->app->configurationIsCached())) {
+        if (!($this->app instanceof CachesConfiguration && $this->app->configurationIsCached())) {
             $config = $this->app->make('config');
             $appConfig = $config->get('php-beam');
             $generator = require __DIR__ . '/../config/php-beam-vite.php';
