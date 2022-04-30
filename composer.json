@@ -19,6 +19,6 @@
     "require": {
         "inertiajs/inertia-laravel": "^0.5.4",
         "innocenzi/laravel-vite": "0.2.*",
-        "lifespikes/laravel-bare": "^0.7.61"
+        "lifespikes/laravel-bare": "^0.7.62"
     }
 }
