@@ -7,6 +7,7 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Inertia\Middleware as InertiaMiddleware;
+use LifeSpikes\PhpBeam\Support\HandleInertiaRequests;
 use Illuminate\Contracts\Foundation\CachesConfiguration;
 
 class PhpBeamServiceProvider extends ServiceProvider
@@ -20,8 +21,8 @@ class PhpBeamServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        Inertia::setRootView(Config::get('php-beam.root_view'));
-        Route::pushMiddlewareToGroup('web', InertiaMiddleware::class);
+        Inertia::setRootView(\Illuminate\Support\Facades\Config::get('php-beam.root_view'));
+        Route::pushMiddlewareToGroup('web', HandleInertiaRequests::class);
     }
 
     private function createViteConfiguration()
