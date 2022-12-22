@@ -1,6 +1,6 @@
 <?php
 
-namespace LifeSpikes\PhpBeam\Support\SimpleHttpClient\Enums;
+namespace LifeSpikes\PhpBeam\Laravel\HttpClient\Enums;
 
 enum HttpMethod: string
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace LifeSpikes\PhpBeam\Support\Inertia;
+namespace LifeSpikes\PhpBeam\Inertia\Config;
 
 use Closure;
 use Illuminate\Http\Request;

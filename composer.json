@@ -17,8 +17,15 @@
         }
     },
     "require": {
-        "inertiajs/inertia-laravel": "^0.5.4",
-        "innocenzi/laravel-vite": "0.2.*",
-        "lifespikes/laravel-bare": "^0.8.34"
+        "inertiajs/inertia-laravel": "^v0.6",
+        "innocenzi/laravel-vite": "^v0.2",
+        "lifespikes/laravel-bare": "^0.8.35",
+        "spatie/laravel-data": "^2.0",
+        "spatie/typescript-transformer": "^2.1",
+        "tightenco/ziggy": "^1.5"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.9",
+        "webmozart/assert": "^1.11"
     }
 }

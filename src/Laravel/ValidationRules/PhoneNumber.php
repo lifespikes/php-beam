@@ -1,6 +1,6 @@
 <?php
 
-namespace LifeSpikes\PhpBeam\Support\Rules;
+namespace LifeSpikes\PhpBeam\Laravel\ValidationRules;
 
 use Illuminate\Contracts\Validation\Rule;
 

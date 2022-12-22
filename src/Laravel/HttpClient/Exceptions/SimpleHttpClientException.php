@@ -1,6 +1,6 @@
 <?php
 
-namespace LifeSpikes\PhpBeam\Support\SimpleHttpClient\Exceptions;
+namespace LifeSpikes\PhpBeam\Laravel\HttpClient\Exceptions;
 
 use Spatie\LaravelIgnition\Facades\Flare;
 use LifeSpikes\PhpBeam\Exceptions\DebugException;

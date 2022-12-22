@@ -1,12 +1,12 @@
 <?php
 
-namespace LifeSpikes\PhpBeam\Support\SimpleHttpClient;
+namespace LifeSpikes\PhpBeam\Laravel\HttpClient;
 
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
 use Str;
-use LifeSpikes\PhpBeam\Support\SimpleHttpClient\Enums\HttpMethod;
-use LifeSpikes\PhpBeam\Support\SimpleHttpClient\Exceptions\SimpleHttpClientException;
+use LifeSpikes\PhpBeam\Laravel\HttpClient\Enums\HttpMethod;
+use LifeSpikes\PhpBeam\Laravel\HttpClient\Exceptions\SimpleHttpClientException;
 
 /**
  * @method Response post(string $endpoint, array $body = [])

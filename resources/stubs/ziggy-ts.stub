@@ -1,0 +1,12 @@
+import {Config, RouteParamsWithQueryOverload} from 'ziggy-js';
+
+export type AppRoutes = {
+{{ROUTES}}
+};
+
+export type Router = (
+  name?: keyof AppRoutes,
+  params?: RouteParamsWithQueryOverload,
+  absolute?: boolean,
+  config?: Config,
+) => string | Router;

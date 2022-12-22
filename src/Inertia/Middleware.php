@@ -1,10 +1,11 @@
 <?php
 
-namespace LifeSpikes\PhpBeam\Support\Inertia;
+namespace LifeSpikes\PhpBeam\Inertia;
 
-use Illuminate\Contracts\Config\Repository;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Config\Repository;
 use Inertia\Middleware as InertiaMiddleware;
+use LifeSpikes\PhpBeam\Inertia\Config\BeamConfig;
 
 class Middleware extends InertiaMiddleware
 {

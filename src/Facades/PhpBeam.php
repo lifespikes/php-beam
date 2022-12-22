@@ -1,14 +1,14 @@
 <?php
 
-namespace LifeSpikes\PhpBeam\Support;
+namespace LifeSpikes\PhpBeam\Facades;
 
 use Closure;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use LifeSpikes\PhpBeam\Support\Inertia\BeamConfig;
-use LifeSpikes\PhpBeam\Support\Inertia\BeamConfigFactory;
-use LifeSpikes\PhpBeam\Support\Inertia\Middleware;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Config;
+use LifeSpikes\PhpBeam\Inertia\Middleware;
+use LifeSpikes\PhpBeam\Inertia\Config\BeamConfig;
+use LifeSpikes\PhpBeam\Inertia\Config\BeamConfigFactory;
 
 class PhpBeam
 {
