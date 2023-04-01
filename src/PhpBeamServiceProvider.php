@@ -22,23 +22,29 @@ class PhpBeamServiceProvider extends ServiceProvider
 
     private function createViteConfiguration()
     {
-        $this->mergeConfig('vite', ['merged' => 'config']);
+        /*  if (!($this->app instanceof CachesConfiguration && $this->app->configurationIsCached(
+              ))) {
+              $config = $this->app->make('config');
+              $appConfig = $config->get('php-beam');
+              $generator = require __DIR__.'/../config/php-beam-vite.php';
 
-        $this->mergeConfig('vite', function (Repository $config) {
-            $appConfig = $config->get('php-beam');
-            $generator = require __DIR__.'/../config/php-beam-vite.php';
-
-            return $generator(
-                publicDir: $appConfig['public_dir'],
-                buildDir: $appConfig['build_dir'],
-                entryPoint: $appConfig['entry_point'],
-                viteBindUri: $appConfig['vite']['bind_url'],
-                viteBindPort: $appConfig['vite']['bind_port'],
-                vitePublicUri: $appConfig['vite']['public_url'],
-                viteSslKey: $appConfig['vite']['ssl_key'],
-                viteSslCert: $appConfig['vite']['ssl_cert'],
-                aliases: $appConfig['aliases'],
-            );
-        });
+              $config->set(
+                  'vite',
+                  array_merge(
+                      $config->get('vite', []),
+                      $generator(
+                          publicDir: $appConfig['public_dir'],
+                          buildDir: $appConfig['build_dir'],
+                          entryPoint: $appConfig['entry_point'],
+                          viteBindUri: $appConfig['vite']['bind_url'],
+                          viteBindPort: $appConfig['vite']['bind_port'],
+                          vitePublicUri: $appConfig['vite']['public_url'],
+                          viteSslKey: $appConfig['vite']['ssl_key'],
+                          viteSslCert: $appConfig['vite']['ssl_cert'],
+                          aliases: $appConfig['aliases'],
+                      )
+                  )
+              );
+          }*/
     }
 }
