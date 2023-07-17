@@ -18,7 +18,7 @@
     },
     "require": {
         "inertiajs/inertia-laravel": "^v0.6",
-        "lifespikes/laravel-bare": "^0.8.92",
+        "lifespikes/laravel-bare": "^0.8.93",
         "spatie/laravel-data": "^2.0",
         "spatie/typescript-transformer": "^2.1",
         "tightenco/ziggy": "^1.5"
