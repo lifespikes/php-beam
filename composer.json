@@ -18,8 +18,8 @@
     },
     "require": {
         "inertiajs/inertia-laravel": "^v0.6",
-        "lifespikes/laravel-bare": "^0.8.94",
-        "spatie/laravel-data": "^2.0",
+        "lifespikes/laravel-bare": "^0.8.95",
+        "spatie/laravel-data": "^3.7",
         "spatie/typescript-transformer": "^2.1",
         "tightenco/ziggy": "^1.5"
     },
