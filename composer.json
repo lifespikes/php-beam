@@ -1,6 +1,7 @@
 {
     "name": "lifespikes/php-beam",
     "description": "Opinionated PHP bootstrap package for LifeSpikes projects",
+    "version": "v0.8.96",
     "autoload": {
         "psr-4": {
             "LifeSpikes\\PhpBeam\\": "src"
@@ -17,13 +18,13 @@
         }
     },
     "require": {
-        "inertiajs/inertia-laravel": "^v0.6",
-        "lifespikes/laravel-bare": "^0.8.95",
-        "spatie/laravel-data": "^3.7",
-        "spatie/typescript-transformer": "^2.1",
-        "tightenco/ziggy": "^1.5"
+        "lifespikes/laravel-bare": "^0.8.96"
     },
     "require-dev": {
+        "spatie/laravel-data": "^3.7",
+        "spatie/typescript-transformer": "^2.1",
+        "tightenco/ziggy": "^1.5",
+        "inertiajs/inertia-laravel": "^v2.0.1",
         "phpstan/phpstan": "^1.9",
         "webmozart/assert": "^1.11"
     }
